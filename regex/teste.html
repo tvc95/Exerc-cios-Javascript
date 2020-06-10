@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<script>
+
+	var codigos = 'A121B12112C12212F12G01';
+
+
+	//var valores = arquivo.split(',');	//o split separa a string anterior em substrings ["100", "200-150", "200;20"]
+
+	var exp = /[A-Za-z]\d+/g
+
+	var valores = codigos.match(exp);
+
+	console.log(valores);
+
+
+	
+</script>
+</html>
+
+
+<!-- var target = '11a22b33c';
+	var exp = /(\d\d)(\w)/g;
+	var resultado = null;
+
+	while(resultado = exp.exec(target)){
+		console.log(resultado);
+		console.log(exp.lastIndex);
+	} -->
